@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$intro-bg: hsl(217, 28%, 15%);
+$main-bg: hsl(218, 28%, 13%);
+$footer-bg: hsl(216, 53%, 9%);
+$testimo-bg: hsl(219, 30%, 18%);
+$cta-cyan: hsl(176, 68%, 64%);
+$cta-blue: hsl(198, 60%, 50%);
+$white: hsl(0, 0%, 100%);
+$font-html: "Raleway", sans-serif;
+$font-body: "Open Sans", sans-serif;
+
+html {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $font-html;
+}
+
+body {
+  font-family: $font-body;
+}
+
+.nav-container {
+  min-height: 9vh;
+  background-color: $intro-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  .nav-logo {
+    margin: 2rem;
+    width: 100px;
+    height: 30px;
+  }
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 1rem 2rem;
+    .nav-link {
+      text-decoration: none;
+      color: $white;
+      margin: 1rem 2rem;
+    }
+  }
+}
+
+.main-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $intro-bg;
+  color: $white;
+  .main-img {
+    margin: 1rem;
+  }
+  .main-section {
+    background-color: $intro-bg;
+    min-height: 60vh;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+  }
+  .main-p {
+    text-align: center;
+    margin: 1rem;
+  }
+  .main-btn {
+    background: $cta-blue;
+    border: $cta-blue;
+    margin: 1rem;
+    padding: 1rem 6rem;
+    border-radius: 20px;
+    cursor: pointer;
+    color: $white;
+  }
+}

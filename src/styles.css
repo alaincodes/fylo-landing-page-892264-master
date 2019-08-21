@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-container {
+  min-height: 9vh;
+  background-color: #1c2431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.nav-container .nav-logo {
+  margin: 2rem;
+  width: 100px;
+  height: 30px;
+}
+
+.nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 2rem;
+}
+
+.nav-container .nav-links .nav-link {
+  text-decoration: none;
+  color: white;
+  margin: 1rem 2rem;
+}
+
+.main-container {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1c2431;
+  color: white;
+}
+
+.main-container .main-img {
+  margin: 1rem;
+}
+
+.main-container .main-section {
+  background-color: #1c2431;
+  min-height: 60vh;
+  background-image: url(./images/bg-curvy-desktop.svg);
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.main-container .main-p {
+  text-align: center;
+  margin: 1rem;
+}
+
+.main-container .main-btn {
+  background: #339ecc;
+  border: #339ecc;
+  margin: 1rem;
+  padding: 1rem 6rem;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
