@@ -7,6 +7,14 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 $intro-bg: hsl(217, 28%, 15%);
 $main-bg: hsl(218, 28%, 13%);
 $footer-bg: hsl(216, 53%, 9%);
@@ -25,15 +33,18 @@ html {
 
 body {
   font-family: $font-body;
+  background-color: $intro-bg;
 }
 
 .nav-container {
   min-height: 9vh;
+  max-width: 1440px;
   background-color: $intro-bg;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: $white;
+  margin: auto;
   .nav-logo {
     margin: 2rem;
     width: 100px;
@@ -60,6 +71,7 @@ body {
   align-items: center;
   background-color: $intro-bg;
   color: $white;
+  margin: auto;
   .main-img {
     margin: 1rem;
   }
@@ -69,7 +81,6 @@ body {
     background-image: url(./images/bg-curvy-desktop.svg);
     background-size: cover;
     width: 100%;
-    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,4 +103,119 @@ body {
     cursor: pointer;
     color: $white;
   }
+}
+
+.features-container {
+  background: $main-bg;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  align-items: center;
+  color: $white;
+  margin: auto;
+  .features-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .features-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 2rem;
+      h3 {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+.exemple-container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: $main-bg;
+  color: $white;
+  margin: auto;
+  .exemple-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-container {
+  height: 70vh;
+  background: $main-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  max-width: 1440px;
+  margin: auto;
+  .card-content {
+    background: $intro-bg;
+    border: 1px solid $intro-bg;
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 2rem;
+    .card-info {
+      display: flex;
+      margin: 1rem 0;
+      .card-img {
+        border-radius: 50%;
+        width: 50px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.email-container {
+  display: flex;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: $main-bg;
+  color: $white;
+  .email-box {
+    border: 1px solid $intro-bg;
+    background: $intro-bg;
+    width: 900px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px red;
+    .email-input {
+      margin-top: 1rem;
+      border-radius: 30px;
+      background: $white;
+      padding: 1rem;
+      width: 300px;
+    }
+    .email-btn {
+      background: $cta-blue;
+      border: 1px solid $cta-blue;
+      padding: 1rem 2rem;
+      margin-left: 1rem;
+      border-radius: 30px;
+      color: $white;
+    }
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $white;
+  min-height: 30vh;
 }
