@@ -267,6 +267,7 @@ body {
 
 .email-container .email-box {
   border: 1px solid #1c2431;
+  border-radius: 10px;
   background: #1c2431;
   width: 900px;
   min-height: 20vh;
@@ -284,8 +285,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-shadow: 2px 2px 2px red;
-          box-shadow: 2px 2px 2px red;
+  -webkit-box-shadow: 2px 2px 2px #161616;
+          box-shadow: 2px 2px 2px #161616;
 }
 
 .email-container .email-box .email-input {
@@ -317,5 +318,102 @@ body {
           align-items: center;
   color: white;
   min-height: 30vh;
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    max-width: 640px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 1rem auto;
+  }
+  .nav-container .nav-logo {
+    margin: 1rem;
+    width: 50px;
+    height: 20px;
+  }
+  .nav-container .nav-links {
+    margin: 1rem auto;
+  }
+  .nav-container .nav-links .nav-link {
+    margin: 1rem 1rem;
+  }
+  .main-img {
+    margin: 2rem;
+    background-size: cover;
+    height: 200px;
+  }
+  .main-h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .exemple-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 70vh;
+  }
+  .exemple-container .exemple-img {
+    width: 200px;
+    margin: 1rem;
+  }
+  .exemple-container .exemple-content {
+    margin: 2rem 2rem;
+  }
+  .card-container {
+    height: 900px;
+  }
+  .features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-container {
+    width: 300px;
+    margin: 1rem auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .email-container .email-box {
+    padding: 1rem;
+  }
+  .email-container .email-box .email-input {
+    width: 200px;
+    height: 40px;
+    margin: 1rem auto;
+  }
+  .email-container .email-box .email-btn {
+    width: 200px;
+    height: 40px;
+    margin: 0.5rem auto;
+  }
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 50vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+    padding: 2rem;
+  }
+  .footer-container div {
+    margin: 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

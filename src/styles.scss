@@ -185,6 +185,7 @@ body {
   color: $white;
   .email-box {
     border: 1px solid $intro-bg;
+    border-radius: 10px;
     background: $intro-bg;
     width: 900px;
     min-height: 20vh;
@@ -193,7 +194,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 2px 2px 2px red;
+    box-shadow: 2px 2px 2px rgb(22, 22, 22);
     .email-input {
       margin-top: 1rem;
       border-radius: 30px;
@@ -218,4 +219,96 @@ body {
   align-items: center;
   color: $white;
   min-height: 30vh;
+}
+
+@media (max-width: 640px) {
+  .nav-container {
+    max-width: 640px;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    .nav-logo {
+      margin: 1rem;
+      width: 50px;
+      height: 20px;
+    }
+    .nav-links {
+      margin: 1rem auto;
+      .nav-link {
+        margin: 1rem 1rem;
+      }
+    }
+  }
+
+  .main-img {
+    margin: 2rem;
+    background-size: cover;
+    height: 200px;
+  }
+  .main-h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .exemple-container {
+    flex-direction: column;
+    min-height: 70vh;
+    .exemple-img {
+      width: 200px;
+      margin: 1rem;
+    }
+    .exemple-content {
+      margin: 2rem 2rem;
+    }
+  }
+
+  .card-container {
+    height: 900px;
+  }
+
+  .features-container {
+    flex-direction: column;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+
+  .email-container {
+    width: 300px;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    .email-box {
+      padding: 1rem;
+      .email-input {
+        width: 200px;
+        height: 40px;
+        margin: 1rem auto;
+      }
+      .email-btn {
+        width: 200px;
+        height: 40px;
+        margin: 0.5rem auto;
+      }
+    }
+  }
+
+  .footer-container {
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: flex-start;
+    margin: auto;
+    padding: 2rem;
+    div {
+      margin: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1200px) {
 }
